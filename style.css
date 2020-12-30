@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body{
+    background-color: #eee;
+    /* font: normal 14px/normal "Rubik-Regular","Arial, Helvetica, sans-serif"; */
+    font-family: 'Rubik', sans-serif;
+    color:#333;
+    font-size: 14px;
+    font-weight: normal;
+}
+.yt-header{
+    background-color: white;
+    padding: 8px 0;
+    margin-bottom: 1px;
+}
+.yt-logo{
+    height: 39.5px;
+    width: 110px;
+    display: inline-block;
+}
+.yt-header a{
+    color: #333;
+    font-size: 13px;
+}
+.yt-side-bar{
+    background-color: white;
+    height: 167em;
+}
+.yt-hotels-main-div{
+    height: 167em;
+    overflow-x: auto;
+}
+.yt-hotels-main-div::-webkit-scrollbar {
+    display: none;
+}
+.yt-accordion{
+    font : normal .857em "Rubik-Medium";
+    padding: 0px 35px 10px 0;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.yt-side-header{
+    display: inline-block;
+    font-weight: 600;
+    font-size:.857em;
+    font-family: 'Rubik-Medium', sans-serif;
+}
+.yt-hide-button{
+    float: right;
+    color: #c1c1c1;
+    width: 0em;
+    font-size: .714em;
+    font-family: 'Rubik-Medium',sans-serif;
+}
+.yt-linebreak{
+    margin-bottom: 3em;
+}
+.yt-icon-color{
+    color: #c1c1c1;
+    background-color: #eee;
+    border:1px solid #c7c7c7;
+}
+.yt-input-box{
+    background-color: #eee;
+    border:1px solid #c7c7c7;
+    height: 2em;
+}
+.yt-icon-color .btn:hover {
+    color: #c1c1c1;
+    text-decoration: none;
+}
+.yt-customcheck-content{
+    display: inline-block;
+    font-size: 13px;
+    color: #c1c1c1;
+    margin-left: 5px;
+    font-weight: 600;
+}
+.yt-side-table-content{
+    font-size: 11px;
+}
+.yt-side-table-head-green{
+    font-size: 12px;
+    color: #00a680;
+}
+/* The customcheck */
+.customcheck {
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.customcheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #eee;
+    border-radius: 3px;
+    border:1px solid #c7c7c7;
+}
+/* When the checkbox is checked, add a blue background */
+.customcheck input:checked ~ .checkmark {
+    background-color: red;
+    border-radius: 5px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.customcheck input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.customcheck .checkmark:after {
+    left: 5px;
+    top: 1.4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.form-control:focus{
+    color:unset;
+    background-color: #eee;
+    border:1px solid #c7c7c7;
+    outline: 0;
+    box-shadow: unset;
+}
+.fa{
+    color:#c1c1c1;
+}
+.yt-rating-icon{
+    width: 32px;
+    margin-top: 5px;
+}
+.yt-star-icon{
+    width: 20px;
+    margin-top: 5px;
+}
+.yt-table-styling {
+    border: 1px solid #c7c7c7;
+    border-collapse: collapse;
+}
+.yt-table-styling td{
+    border: 1px solid #c7c7c7;
+    padding: 8px 8px;
+}
+.yt-table-styling hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.yt-hotel-details{
+    background-color: white;
+    margin-bottom: 2em;
+}
+
+.yt-percent-off {
+    position: absolute;
+    z-index: 99;
+    background: #F34F4F;
+    padding: 3px 20px 5px 20px;
+    color: #fff;
+    font-size: 12px;
+    left:5px;
+    box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.4);
+    -webkit-box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.4);
+}
+/* .yt-flagwave {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-image: -webkit-gradient(linear, 50% 30%, 100% top, color-stop(0%, rgba(204,99,40,0)), color-stop(25%, rgba(250,250,250,0.3)), color-stop(50%, rgba(204,99,40,0)));
+    background-size: 200%;
+    background-position: right;
+} */
+.yt-mt-10 {
+    margin-top: 10px;
+}
+.yt-percent-off span:first-child {
+    font-size: 20px;
+}
+.yt-txt-al {
+    text-align: left !important;
+}
+.carousel-item img {
+    height: 234px;
+    width: 256px;
+}
+.yt-hotel-details-name{
+    font-size: 18px;
+    font-weight:normal;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.yt-hotel-details-star{
+    width: 15px;
+    margin-bottom: 5px;
+}
+.yt-hotel-deatils-content{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 11px;
+    color: #333;
+}
+.yt-hotel-details-sub{
+    margin-top: 1em;
+}
+.yts-smart-tag-tuple {
+    width: 127px;
+    height: 27px;
+    line-height: 21px;
+}
+.yts-sprite {
+    background: transparent url("https://css.yatracdn.com/content/globalcdn/bongo-cdn/images/hotel/yts-sprite-v3.png?version=201816071830") 0 0 no-repeat;
+    display: inline-block;
+}
+.yt-hotel-details-promo img{
+    height: 23px;
+    margin-right: 5px;
+}
+.yt-hotel-details-promo {
+    margin-top: 1em;
+    margin-bottom: 4.5em;
+}
+.yt-hotel-details-rating{
+    text-align: right;
+    margin-top: 15px;
+    margin-left: -12px;
+}
+.yt-hotel-details-rating img{
+    height: 20px;
+    width: 28px;
+}
+.yt-hotel-details-rating-green {
+    display: inline-block;
+    font-size: .786em;
+    color: #00a680;
+}
+.yt-hotel-details-rating-content{
+    display: inline-block;
+    font-size: 10px;
+    color: #999;
+}
+.yt-hotel-details-rating-content-1{
+    display: inline-block;
+    font-size: .786em;
+    color: #333;
+}
+.hotel-details-rating-price-original {
+    font-size: 14px;
+    color: #c1c1c1;
+    margin-top: 15px;
+    display: inline-block;
+}
+.hotel-details-rating-price-discount {
+    display: inline-block;
+    font-size: 1.571em;
+    color: black;
+}
+.hotel-details-rating-price-discount i{
+    color: black;
+}
+.yt-popup {
+    border: none;
+    padding: initial;
+    background: none;
+}
+.yt-zoom-in{
+    position: absolute;
+    z-index: 99;
+    padding: 3px 20px 5px 20px;
+    color: #fff;
+    border: 0;
+    bottom: 0;
+    right: 0;
+}
+.yt-search-icon i{
+    color: darkgray;
+    margin-left: 6px;
+    font-size: 21px;
+}
+.popup-slider {
+    width: 100% !important;
+    height: auto !important;
+}
+.modal-content{
+    background-color: unset;
+    border: unset;
+    width: 125%;
+}
+.yt-popup-close {
+    background-color: #333;
+    box-shadow: none;
+    border: none;
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+}
+.yt-hotels-heading .form-control{
+    ddisplay: block;
+    width: 96%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: .786em;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: #e4e4e4;
+    color: #666;
+    background-clip: padding-box;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding-left: 2.85em;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.yt-hotels-heading .form-group.has-search {
+    margin-left: 3em;
+}
+.yt-hotels-heading {
+    padding-top: 24px;
+    text-align: center;
+    padding-bottom: 6px;
+}
+.yt-hotels-heading-name{
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+}
+.yt-hotel-list-heading{
+    background-color: white;
+    margin-bottom: 1em;
+}
+.yt-sort td {
+    font-size: .714em;
+    width: 1%;
+}
+.yt-hotel-list-name {
+    margin-left: 1em;
+    border-top: 3px solid red;
+    background-color: #eee;
+    padding: 8px;
+    width: 43%;
+    height: 59px;
+}
+.yt-hotel-list-content, .yt-hotel-list-content i{
+    font-size: 11px;
+    color: #333;
+    line-height: 15px;
+}
+.yt-hotel-list-offer {
+    border: 1px solid black;
+    width: 48%;
+    font-size: 11px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 5px;
+    display: inline-block;
+    float: right;
+}
+.yt-hotel-list{
+    padding: 8px;
+}
+.yt-list-or-map{
+    display: inline-block;
+    background-color: #eee;
+    padding: 11px;
+    border-radius: 6px;
+}
+.carousel-control-next-icon {
+    /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' …%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e); */
+    color: #333;
+    background-color: white;
+    border-radius: 13px;
+    font-size: 21px;
+    width: 25;
+    font-weight: 600;
+    height: 25;
+}
+.carousel-control-prev-icon {
+    /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' …%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e); */
+    color: #333;
+    background-color: white;
+    border-radius: 13px;
+    font-size: 21px;
+    width: 25;
+    font-weight: 600;
+    height: 25;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .yt-hotel-header-usericon i {
+    padding: 8px;
+    font-size: 3em;
+}
+.yt-hotel-header-dropdown {
+    min-width: 13em;
+    left: -50px;
+}
+.yt-hotel-header-content {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #636363;
+    transition: left 2s;
+}
+.yt-hotel-login {
+    line-height: 12px;
+}
+.yt-hotel-signup {
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+    line-height: 12px;
+}
+.yt-hotel-dropdown-break {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c1c1c1;
+}
+.yt-hotel-header-content:hover {
+    margin-left: 1em;
+}
+.yt-hotel-header-recent {
+    min-width: 27em;
+    left: -13em;
+}
+.yt-hotel-recent {
+    color: #636363;
+    font-size: 13px;
+    line-height: 19px;
+}
+.yt-hotel-recent-price {
+    text-align: right;
+    color: #636363;
+    font-size: 19px;
+    margin-top: 4px;
+}
+.yt-hotel-details-adver{
+    margin-bottom: 2em;
+}
+.yt-hotel-details-adver img{
+    width: 100%;
+}
+.yt-sort{
+    margin-bottom: 2em;
+}
+.yt-footer{
+    border: 1px solid #636363;
+}
+.yt-view-all button {
+    color: #666;
+    background-color: white;
+    border: none;
+    font-size: 12px;
+}
+.yt-view-all {
+    text-align: end;
+}
+.yt-view-all .modal-content {
+    background-color: white;
+}
+.yt-view-all .modal-header {
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #cdcecf;
+}
+.yt-view-all .modal-footer{
+    background-color: #F9F9F9;
+    border-top: 1px solid #cdcecf;
+}
+.yt-view-all .close {
+    border: unset;
+    background-color: unset;
+    font-size: 23px;
+    padding: unset;
+    margin: unset;
+}
+.yt-view-all .modal-title {
+    font-size: 14px;
+}
+button.yt-view-all-done {
+    font-size: 16px;
+    border-radius: 5px;
+    background: #F34F4F;
+    border: 1px solid #F34F4F;
+    color: #fff;
+    padding: 5px 10px;
+}
+button.yt-view-all-clear {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: #e4e4e4;
+    border: 1px solid #bfbfbf;
+    color: #666;
+}
+.yt-view-all .modal-dialog {
+    max-width: 639px;
+}
+.yt-view-all table {
+    table-layout: fixed;
+}
+
+.percent-off-1 {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    width: 0;
+    height: 0;
+    border: 5px solid #F34F4F;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.yt-flagwave:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, 50% 30%, 100% top, color-stop(0%, rgba(204,99,40,0)), color-stop(25%, rgba(250,250,250,0.3)), color-stop(50%, rgba(204,99,40,0)));
+    background-position: right;
+    animation: countdown 2s infinite;
+    z-index: -1;
+  }
+  
+  @keyframes countdown {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 150%;
+    }
+  }
+  .yt-color-orange{
+      color:orange;
+  }
+  .yt-color-green{
+      color: #00a680;
+  }
+  .navbar{
+      padding-bottom: unset !important;
+  }
+  .btn-danger{
+    font-size: 1.071em;
+    background-color: red;
+  }
